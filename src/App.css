@@ -49,6 +49,7 @@ a {
   display: flex;
   align-items: center;
   color: #fff;
+   text-decoration: none;
 }
 .recipes a{
   position: relative;
@@ -58,6 +59,7 @@ a {
   display: flex;
   align-items: center;
   color: #fff;
+   text-decoration: none;
 }
 
 i {
@@ -68,7 +70,7 @@ i {
 
 .text-home{
   position: relative;
-  left:32rem;
+  left:57rem;
   color: #f9c11c;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
@@ -77,14 +79,15 @@ i {
   box-shadow: 0.2rem 0.5rem 1rem #fff86ab4;
 }
 
-h1 {
+ h1 {
   color: #f9c11c;
   margin-bottom: 4rem;
   padding: 1rem 1rem;
-  font-size: 9rem;
+  font-size: 6rem;
   border-radius: 3rem;
   box-shadow: 0.2rem 0.5rem 1rem #fff86ab4;
 }
+
 
 h5 {
   font-size: 2rem;
@@ -97,23 +100,29 @@ h5 {
 }
 
 .cred{
+  display:flex;
+  flex-direction:initial;
   position: relative;
-  top: 75rem;
-  left:-125rem;
+  top: 65rem;
+  left:-119rem;
  font-size: 1.5rem;
  letter-spacing: 0.1rem;
  font-style: oblique;
  color: #fff;
- text-transform: uppercase;
+ text-decoration: none;
 }
 
 .cred-link {
   position: relative;
-  top: 75rem;
-  left: -103rem;
+  top: 68rem;
+  left: -141rem;
   letter-spacing: 0.1rem;
   font-style: oblique;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.home{
+  display:flex;
 }
 
 h4 {
@@ -136,10 +145,20 @@ h4 {
   align-items: center;
   background-color: #61234e;
 }
+.mealType{
+  padding: 1rem;
+  background-color: #df0e6288;
+  border-radius: 2rem;;
+  position:relative;
+  top:6rem;
+  color: #facf5a;
+  font-size:2rem;
+
+}
 
 /* -------search-form----------- */
 .search-form {
-  width: 150rem;
+  width: 100rem;
   height: 8rem;
   display: flex;
   justify-content: center;
@@ -153,7 +172,7 @@ h4 {
 .search-form-home {
 top:35rem;
 left:-8rem;
-width: 30rem;
+width: 50rem;
 height: 6rem;
 display: flex;
 justify-content: center;
@@ -174,13 +193,14 @@ color: #f7ea00;
   top: -3rem;
   left: 100;
   background-color: #f7ea00;
-  width: calc(50% - 10rem);
+  width: calc(50% - 0.5rem);
   height: 4rem;
   border-radius: 2rem;
   padding: 0.2rem;
 }
 
 .alert h3 {
+  width:50rem;
   margin: -0.1rem 0rem;
   font-size: 3rem;
   color: #fa1e0e;
@@ -227,17 +247,18 @@ color: #f7ea00;
 
 .recipe {
   width: 30rem;
+  padding: 4rem;
   margin: 3rem;
   display: flex;
   flex-direction: column;
   background-color: #8c0000;
-  padding: 2rem;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 1rem 2rem 3rem #fff76a;
 }
 
 .recipe h2 {
+  margin-bottom:2rem;
   position: absolute;
   background-color: #61b15a94;
   border-radius: 1.2rem;
@@ -245,7 +266,7 @@ color: #f7ea00;
   top: 2.2rem;
   left: 2.5rem;
   right: 2.5rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
@@ -257,7 +278,7 @@ color: #f7ea00;
 }
 
 .recipe a {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   background-color: #f9c21ca2;
   border: #b2085d9d 0.1rem solid;
   border-radius: 1.5rem;
@@ -312,14 +333,14 @@ color: #f7ea00;
 }
 
 .nav-link {
-  padding-right: 4rem;
+  padding-right: 2rem;
   color: #f6830f;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .navbar-item{
   position: relative;
-  left:15rem;
+  left:20rem;
  display:inline-flex;
  justify-content: center;
  align-items: center;

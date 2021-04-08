@@ -5,11 +5,13 @@ import Axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import Recipe from "../components/Recipe";
 import Alert from "../components/Alert";
-// import FavList from "../components/FavList"
+ import FavList from "../components/FavList"
+ import {useHistory} from "react-router-dom"
 
 
 
 function Food() {
+  const {push} =useHistory()
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
   const [alert, setAlert] = useState("");
@@ -29,7 +31,7 @@ const saveRec = async (childData)=>{
   await setSavedRec([...savedRec,childData])
 
 }
-
+console.log(savedRec);
 useEffect(()=>{
 
  let store = localStorage.getItem('recepies') || [];
@@ -41,7 +43,8 @@ useEffect(()=>{
  //change data to json
  store = JSON.stringify(store)
  savedRec.length && localStorage.setItem('recepies',store)
-// console.log(savedRec);
+//  console.log(savedRec);
+console.log(store);
 },[savedRec])
 
   const getData = async () => {
@@ -97,11 +100,11 @@ useEffect(()=>{
 
     </div>
     <div className="favlist">
-      <button className="btn" onClick={() => setIsFavs(!isFavs)}>Favs</button>
+      <button className="btn" onClick={() => {setIsFavs(!isFavs); push('/favlist')}}>Favs</button>
       </div>
       {isFavs && <div className="favlist">
 
-        {/* <FavList /> */}
+        <FavList />
 
         </div>}
 

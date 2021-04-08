@@ -6,6 +6,7 @@ import Default from "../src/FOODS/pages/Default";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../src/NAVBAR/Navbar";
 import Food from "./FOODS/pages/Food"
+import FavList from "./FOODS/components/FavList"
 // import Restaurant from "./RESTURANTS/pages/Restaurant"
 
 const App =()=> {
@@ -22,6 +23,8 @@ const App =()=> {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/food" exact ><Food /></Route>
+            <Route path="/favlist" exact ><FavList/></Route>
+
              {/* <Route path="/restaurant" exact component={Restaurant} /> */}
               {/* <Route path="/plants" exact component={Plant} />
                <Route path="/cloths" exact component={Cloth} /> */}

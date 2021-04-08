@@ -14,14 +14,12 @@ export default class Home extends Component {
 
       <div className="home">
          <h5 className="cred"> made By : <span> Nizar Maarouf</span></h5>
-           <Link className="cred-link" to="/" >
-        <a href="https://www.linkedin.com/in/nizar-maarouf/ " target="_blank"> Linkedin
+        <a className="cred-link" href="https://www.linkedin.com/in/nizar-maarouf/ " alt="linkden" target="_blank"> Linkedin
           <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/NizarMaarouf " target="_blank">Github
+          <a className="cred-link" href="https://github.com/NizarMaarouf " alt="github" target="_blank">Github
            <i className="fab fa-github"></i>
            </a>
-      </Link>
       </div>
       </Header>
     );
