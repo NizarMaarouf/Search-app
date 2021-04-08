@@ -17,7 +17,9 @@ html {
 }
 
 .App {
-  background-color: #d4400075;
+  background-image: url("../src/FOODS/images/defaultBcg.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +28,7 @@ html {
 
 /*----------HEADER----------*/
 .header {
+
   margin: 2rem;
   padding: 1rem;
   width: 85rem;
@@ -34,7 +37,7 @@ html {
   flex-direction: column;
   align-items: center;
   border-radius: 3rem;
-  box-shadow: 0.2rem 0.5rem 1rem #fff86ab4;
+  box-shadow: 0.2rem 0.5rem 1rem #fff86ae8;
 }
 .links{
   display: flex;
@@ -80,7 +83,7 @@ i {
 }
 
  h1 {
-  color: #f9c11c;
+  color: #083358;
   margin-bottom: 4rem;
   padding: 1rem 1rem;
   font-size: 6rem;
@@ -130,8 +133,8 @@ h4 {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   font-style: oblique;
-  color: #4e3620;
-  text-shadow: 1rem 1rem 2rem #fff86ab4;
+  color: #083358;
+  text-shadow: 1rem 1rem 2rem #fff86ada;
   margin: 0.5rem 2rem;
   border-radius: 2rem;
 }
@@ -146,11 +149,12 @@ h4 {
   background-color: #61234e;
 }
 .mealType{
-  padding: 1rem;
-  background-color: #df0e6288;
+  margin-top: 3.5rem;
+  padding: 0.5rem 4rem;
+  background-color: #08335869;
   border-radius: 2rem;;
   position:relative;
-  top:6rem;
+  top:2rem;
   color: #facf5a;
   font-size:2rem;
 
@@ -247,20 +251,20 @@ color: #f7ea00;
 
 .recipe {
   width: 30rem;
-  padding: 4rem;
-  margin: 3rem;
+  padding: 1.5rem 4rem;
+  margin:  3rem;
   display: flex;
   flex-direction: column;
-  background-color: #8c0000;
+  background-color: #84b9ef;
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   box-shadow: 1rem 2rem 3rem #fff76a;
 }
 
 .recipe h2 {
   margin-bottom:2rem;
   position: absolute;
-  background-color: #61b15a94;
+  background-color: #ff8162a9;
   border-radius: 1.2rem;
   padding: 0.6rem 1rem;
   top: 2.2rem;
@@ -273,8 +277,9 @@ color: #f7ea00;
 }
 
 .recipe img {
-  border-radius: 0.5rem;
-  object-fit: cover;
+  margin-top: 3rem;
+  border-radius: 20rem;
+
 }
 
 .recipe a {
@@ -349,16 +354,20 @@ color: #f7ea00;
 
 /*--------FavList----------*/
 button.btn{
-  font-size:2rem;
-  margin-bottom: 1rem;
+ font-size:2rem;
+ margin: 0.5rem;
  width: 10rem;
  text-transform: uppercase;
  background-color: #ff4646;
+ border-radius:2rem;
  color: #fff;
  cursor: pointer;
+
 }
 .favlist{
-  background-color: #f6830f;
+  width: 100%;
+  background-color: #fff195e7;
+   text-shadow: 0 0.5rem 0.5rem #555;
   display: flex;
   flex-direction: column;
   align-items: center;
